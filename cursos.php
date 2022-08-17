@@ -76,7 +76,7 @@ echo "<h1>Bienvenido $nomb_usuario</h1>";
 
                             <option selected>-- Seleccione una materia --</option>
 			    <?php
-				$sql = "select nomb_cur from cursos where cod_doc='$usuario' group by nomb_cur";
+				$sql = "select nomb_cur from cursos where cod_doc='$usuario' group by nomb_cur order by nomb_cur";
 				$query = pg_query($sql);
 				while ($fila = pg_fetch_array($query)) {
 			    ?>
