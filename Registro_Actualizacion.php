@@ -108,7 +108,7 @@ $_SESSION['nota']=$nota
                 				
                 		</tr> 
                 		<?php
-                		$sql = "select c.cod_est, e.nomb_est, c.valor, c.cod_cal from calificaciones c, estudiantes e where c.cod_est=e.cod_est and c.cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and c.year='$year' and c.periodo='$periodo' and c.nota='$nota'";
+                		$sql = "select c.cod_est, e.nomb_est, c.valor, c.cod_cal from calificaciones c, estudiantes e where c.cod_est=e.cod_est and c.cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and c.year='$year' and c.periodo='$periodo' and c.nota='$nota' order by c.cod_est";
                 		$obj = pg_query($sql);
                 		$i=0;
                 		while ($fila = pg_fetch_array($obj)){
