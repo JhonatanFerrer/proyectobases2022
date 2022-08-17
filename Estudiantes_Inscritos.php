@@ -113,7 +113,7 @@ $_SESSION['periodo']=$periodo;
                     <tr>
 
                                 <?php
-                                $sql = "select cod_est, nomb_est from estudiantes where cod_est in (select cod_est from inscripciones where cod_cur in(select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo')";
+                                $sql = "select cod_est, nomb_est from estudiantes where cod_est in (select cod_est from inscripciones where cod_cur in(select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo') order by cod_est";
                                 $obj = pg_query($sql);
                                 $i=0;
                                 while ($fila = pg_fetch_array($obj)){
