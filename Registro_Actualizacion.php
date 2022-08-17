@@ -79,10 +79,6 @@ $_SESSION['nota']=$nota
             <div class="total">
 
 
-                <div id="imagen">
-                    <a href='insercion_notas.php'> <button><img src="imagenes/mas.png"></im></button></a>
-                </div>
-
                 <div id="text_imagen"><h1>Notas</h1></div> 
 
                 
