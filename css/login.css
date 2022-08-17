@@ -1,0 +1,115 @@
+*{
+    margin:0px;
+    padding:0px;
+
+  
+}
+
+.contenedor{
+
+    width:500px;
+    height:350px;
+    position: relative;
+    border-radius: 15px;
+   
+}
+
+.login, tr, th{
+
+
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+    background-color: #3282b5;
+    border-radius: 15px;
+    
+    
+    
+}
+
+
+
+
+body{
+    background-color: #0f4c74;
+    
+}
+
+h1{
+     color:#bae3f8;
+     font-family:'Courier New', Courier, monospace;
+     font-size: 50px;
+}
+
+.usuario_boton{
+
+    width:60%;
+    height:10%;
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5%;
+    background-color:white;
+    border:none;
+     border-radius: 10px;
+}
+
+.ingresar_boton{
+
+    position: relative;
+    margin-right:auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    border:none;
+    background-color:#bbe0f9 ;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 15px;
+    font-size: 20px;
+  
+
+}
+
+
+.ingresar_boton:hover{
+
+    background-color: #114b74;
+    color:white;
+    transition: 0.5s;
+
+
+}
+
+.ingresar{
+
+    width:60%;
+    height:15%;
+    margin-right:auto;
+    margin-left: auto;
+    position: relative;
+    margin-top: 5%;
+}
+
+td{
+    border-radius: 15px;
+}
+
+.error{
+    width:60%;
+    height:50px;
+    margin-right:auto;
+    margin-left: auto;
+    position: relative;
+    text-align: center;
+    margin-top:5%;
+     
+}
+
+#error_text{
+    font-size:20px;
+}
