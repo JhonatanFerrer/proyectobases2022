@@ -108,7 +108,7 @@ $_SESSION['periodo']=$periodo;
                 				
                 		</tr> 
                 		<?php
-                		$sql = "select posicion, desc_nota, porcentaje, nota from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo'";
+                		$sql = "select posicion, desc_nota, porcentaje, nota from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo' order by posicion";
                 		$obj = pg_query($sql);
                 		$i=0;
                 		while ($fila = pg_fetch_array($obj)){
