@@ -15,7 +15,7 @@ if ($per="Periodo I"){
 else{
 	$periodo="2";
 }
-if($cur="- Seleccione una materia --"){
+if($cur="-- Seleccione una materia --"){
 	$_SESSION['cur']=$cur;
 	$_SESSION['year']=$year;
 	$_SESSION['cur']=$cur;
@@ -23,7 +23,7 @@ if($cur="- Seleccione una materia --"){
 	$_SESSION['nombre_usuario']=$usuario;
 	header("location: cursos.php");
 }
-else if($year="- Seleccione un año --"){
+else if($year="-- Seleccione un año --"){
 	$_SESSION['cur']=$cur;
 	$_SESSION['year']=$year;
 	$_SESSION['cur']=$cur;
@@ -31,7 +31,7 @@ else if($year="- Seleccione un año --"){
 	$_SESSION['nombre_usuario']=$usuario;
 	header("location: cursos.php");
 }
-else if($per="- Seleccione un periodo --"){
+else if($per="-- Seleccione un periodo --"){
 	$_SESSION['cur']=$cur;
 	$_SESSION['year']=$year;
 	$_SESSION['cur']=$cur;
