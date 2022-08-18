@@ -182,28 +182,6 @@ img{
 }
 
 
-.edicion{
-
-    width:60%;
-    height:40%;
-    border: 2px solid #4169e2;
-    color:black;
-    font-weight: 700;
-    font-size:15px;
-    text-decoration: none;
-    background-color: transparent;
-    transition: color 0.5s;
-    border-radius:15px ;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.edicion:hover{
-
-    background-color: #4169e2;
-    color:white;
-    transition: 0.5s;
-}
-
 .salir{
     width:100px;
     height: 100px;
@@ -275,4 +253,19 @@ img{
     
 }
    
+#peque{
+    width:20%;
+
+}
    
+.edicion{
+    width:30%;
+    height:auto;
+    border:none;
+    background: transparent;
+}
+
+#two{
+    border:none;
+    background: transparent;
+}
