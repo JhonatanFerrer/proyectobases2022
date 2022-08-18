@@ -57,7 +57,7 @@ $_SESSION['nota']=$nota
         </nav>
     </div>
 
-    <table class="table">
+    <table class="table_two">
 
         <tr>
 
@@ -95,36 +95,40 @@ $_SESSION['nota']=$nota
 
            <!-- Dentro del Div Contenido Tabla debes agregar todo --> 
 
-                <div id="contenido_tabla">                		
-                		<tr>
-                            <th scope="col">Codigo</th>
-                			<th scope="col">Nombre</th>
-                			<th scope="col">Nota</th>
-                			<th></th>
+                <div id="contenido_tabla">         
+                    
+                    <table class="registro">
+
+                		<tr id="registro_uno">
+                            <td scope="col">Codigo</td>
+                			<td scope="col">Nombre</td>
+                			<td scope="col">Nota</td>
+                			<td scope="col">Actualizar</td>
                 				
                 		</tr> 
+
                 		<?php
                 		$sql = "select c.cod_est, e.nomb_est, c.valor, c.cod_cal from calificaciones c, estudiantes e where c.cod_est=e.cod_est and c.cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and c.year='$year' and c.periodo='$periodo' and c.nota='$nota' order by c.cod_est";
                 		$obj = pg_query($sql);
                 		$i=0;
                 		while ($fila = pg_fetch_array($obj)){
                 		$i++;
-                		?>               		                		
+                		?>  
+
                 		<tr>
-                			<th scope="col"><?=$fila[0]?></th>
+                			<td scope="col"><?=$fila[0]?></td>
 
                 				
 
-		        			<th scope="col"><?=$fila[1]?></th>
+		        			<td scope="col"><?=$fila[1]?></td>
                            
 
                             <form action="edit_cal.php" method="POST">
 
-                            <th scope="col"><input name="calificacion" value="<?php echo $fila['2']; ?>"></th>
+                            <td style="width:10%"  scope="col"><input id="cal_no" name="calificacion" value="<?php echo $fila['2']; ?>"></td>
                             <input type="hidden" name="cod_cal" value="<?php echo $fila['3']; ?>">
                             
-
-                            <th scope="col"><button type="submit" >Actualizar</button></th>
+                            <td id="peque"><button class="edicion" type="submit" ><img href="#" id="imgs" src="imagenes/actualizar.png"></button></td>
                             </form>	
 					        	
                 		</tr>
@@ -132,6 +136,9 @@ $_SESSION['nota']=$nota
                 		<?php
                 		}
                 		?>
+
+                    </table>
+                    
                 </div>
 
             </th>
@@ -148,7 +155,7 @@ $_SESSION['nota']=$nota
     </footer>
     <div class="caja_padre">
 
-    <div class="caja_hijo_uno"><a href='Adiccion_Actualizacion.php'><button href="#" type="submit" class="boton_uno" >Atras</button></a></div>
+    <div class="caja_hijo_cuatro"><a href='Adiccion_Actualizacion.php'><button href="#" type="submit" class="boton_uno" >Atras</button></a></div>
 
 
     </div> 
