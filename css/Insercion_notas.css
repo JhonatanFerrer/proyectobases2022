@@ -171,3 +171,24 @@ input{
     border:1px solid black;
     
 }
+
+#pequeñito{
+
+    height:0%;
+}
+
+.salir{
+    width:10%;
+    height:30px;
+    top:10px;
+    left:45%;
+    position: relative;
+}
+
+#two{
+    
+        border:none;
+        background: transparent;
+
+    
+}
