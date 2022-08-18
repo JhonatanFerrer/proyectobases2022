@@ -93,7 +93,7 @@ $_SESSION['periodo']=$periodo;
                         <tr id="registro_uno">
                             <td scope="col"></td>
                         <?php
-                                $sql = "select desc_nota from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo'";
+                                $sql = "select desc_nota from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo' order by posicion";
                                 $obj = pg_query($sql);
                         
                                 while ($fila = pg_fetch_array($obj)){
@@ -111,7 +111,7 @@ $_SESSION['periodo']=$periodo;
                         <tr id="registro_uno">
                             <td scope="col">Codigo</td>
                         <?php
-                                $sql = "select porcentaje from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo'";
+                                $sql = "select porcentaje from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo' order by posicion";
                                 $obj = pg_query($sql);
                         
                                 while ($fila = pg_fetch_array($obj)){
@@ -124,7 +124,7 @@ $_SESSION['periodo']=$periodo;
                             
                 		?>
                         <?php
-                            $sql = "select sum(porcentaje) from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo'";
+                            $sql = "select sum(porcentaje) from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo' order by posicion";
                             $obj = pg_query($sql);
                             $row = pg_fetch_array($obj);
                             $definitiva = $row[0];
@@ -137,7 +137,7 @@ $_SESSION['periodo']=$periodo;
                                
 
                                 <?php
-                                $sql = "select cod_est from estudiantes  where cod_est in (select cod_est from inscripciones where cod_cur in(select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo')";
+                                $sql = "select cod_est from estudiantes  where cod_est in (select cod_est from inscripciones where cod_cur in(select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo' order by cod_est)";
                                 $obj = pg_query($sql);
                                 while ($fila = pg_fetch_array($obj)){
 
