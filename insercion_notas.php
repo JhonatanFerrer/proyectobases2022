@@ -84,19 +84,19 @@ $_SESSION['periodo']=$periodo;
 	<div class="bloque_hijo_uno">
 
 		<form action="inser_nota.php" method="POST">
-		<input  style="height:40px" type="text" name="desc" placeholder="Descripcion de la nota">
+		<input  style="height:40px" type="text" name="desc" placeholder="Descripcion de la nota" required>
 
 	</div>
 
 	<div class="bloque_hijo_dos">
 
-		<input type="number" name="porc" placeholder="Porcentaje de la nota">
+		<input type="number" name="porc" placeholder="Porcentaje de la nota" required>
 
 	</div>
 
 	<div class="bloque_hijo_tres">
 
-		<input type="number" name="posicion" placeholder="Posicion de la nota">
+		<input type="number" name="posicion" placeholder="Posicion de la nota" required>
 
 	</div>
 
