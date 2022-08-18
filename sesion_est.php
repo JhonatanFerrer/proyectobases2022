@@ -14,18 +14,10 @@ if ($per="Periodo I"){
 else{
 	$periodo="2";
 }
-if ($cur="-- Seleccione una materia --"){
-	header("cursos.php");
-}
-else if ($year="-- Seleccione un año --"){
-	header("cursos.php");
-}
-else if ($per="-- Seleccione un periodo --"){
-	header("cursos.php");
-}
-else{
+
+
 	header("location: Estudiantes_Inscritos.php");
-}
+
 
 
 ?>
