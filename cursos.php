@@ -76,7 +76,7 @@ $nomb_usuario = $row[0];
 
                     <div class="select">
 
-                        <select name="curso">
+                        <select name="curso" required>
 
                             <option selected>-- Seleccione una materia --</option>
 			    <?php
@@ -98,7 +98,7 @@ $nomb_usuario = $row[0];
 
                     <div id="select_dos" class="select">
 
-                        <select name="anio">
+                        <select name="anio" required>
 
                             <option selected>-- Seleccione un año --</option>
                             <option>2022</option>
@@ -112,7 +112,7 @@ $nomb_usuario = $row[0];
 
                     <div id="select_tres" class="select">
 
-                        <select name="periodo">
+                        <select name="periodo" required>
 
                             <option selected>-- Seleccione un periodo --</option>
                             <option>Periodo I</option>
