@@ -127,7 +127,7 @@ $_SESSION['periodo']=$periodo;
                                 <input type="hidden" name="cod" value="<?=$fila['0']?>">
                                 <td name="nomb" scope="col"><?=$fila[1]?></td>
 
-                                <td id="peque"><button class="edicion" type="submit" ><img href="#" id="imgs" src="imagenes/trash.png"></button></td>      
+                                <td id="peque"><button class="ediciontwo" type="submit" ><img href="#" id="imgs" src="imagenes/trash.png"></button></td>      
                 
                                 </form>		
 
