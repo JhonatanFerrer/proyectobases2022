@@ -142,6 +142,6 @@ $nomb_usuario = $row[0];
 
     <div class="cerrar">
 
-       <a href="#"><img id="cerrarimg" src="imagenes/cerrar.png"></a>
+       <a href="salir.php"><img id="cerrarimg" src="imagenes/cerrar.png"></a>
 
     </div>
