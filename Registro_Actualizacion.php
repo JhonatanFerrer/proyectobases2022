@@ -127,7 +127,7 @@ $_SESSION['nota']=$nota
                             <form action="edit_cal.php" method="POST">
 
                             <td style="width:10%"  scope="col"><input id="cal_no" name="calificacion" value="<?php echo $fila['2']; ?>"></td>
-                            <input type="hidden" name="cod_cal" value="<?php echo $fila['3']; ?>">
+                            <input type="hidden" name="cod_cal" value="<?php echo $fila['3']; ?>" required>
                             
                             <td id="peque"><button class="edicion" type="submit" ><img href="#" id="imgs" src="imagenes/actualizar.png"></button></td>
                             </form>	
