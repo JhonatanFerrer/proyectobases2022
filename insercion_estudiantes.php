@@ -104,7 +104,7 @@ $_SESSION['periodo']=$periodo;
                 			<td scope="col">No.</td>
                 			<td scope="col">Codigo</td>
                 			<td scope="col">Nombres</td>
-                			<td></td>
+                			<td scope="col">Insertar</td>
                 				
                 		</tr>
 
