@@ -99,52 +99,66 @@ $_SESSION['periodo']=$periodo;
 
            <!-- Dentro del Div Contenido Tabla debes agregar todo --> 
 
-                <div id="contenido_tabla">                		
-                		<tr>
-                            <th scope="col">Posicion</th>
-                			<th scope="col">Descripcion</th>
-                			<th scope="col">Porcentajes</th>
-                			<th></th>
-                				
-                		</tr> 
-                		<?php
-                		$sql = "select posicion, desc_nota, porcentaje, nota from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo' order by posicion";
-                		$obj = pg_query($sql);
-                		$i=0;
-                		while ($fila = pg_fetch_array($obj)){
-                		$i++;
-                		?>               		                		
-                		<tr>
-                			<th scope="col"><?=$fila[0]?></th>
+           
 
-                				
+            <div id="contenido_tabla">                		
+                           
+                <table class="registro">
 
-		        			<th scope="col"><?=$fila[1]?></th>
+                    <tr id="registro_uno">
+                            <td scope="col">Posicion</td>
+                            <td scope="col">Descripcion</td>
+                            <td scope="col">Porcentajes</td>
+                            <td scope="col">Editar</td>
+                            <td scope="col">Borrar</td>
+                            <td scope="col">Registrar</td>
+                            
+                                    
+                    </tr> 
 
-					        <th scope="col"><?=$fila[2]?></th>
+                            <?php
+                            $sql = "select posicion, desc_nota, porcentaje, nota from notas where cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo' order by posicion";
+                            $obj = pg_query($sql);
+                            $i=0;
+                            while ($fila = pg_fetch_array($obj)){
+                            $i++;
+                            ?>    
+
+                    <tr>
+                                
+                            <td scope="col"><?=$fila[0]?></td>
+                            <td scope="col"><?=$fila[1]?></td>
+                            <td scope="col"><?=$fila[2]?></td>
 
 
-		        			<form action="editar_nota.php" method="POST">
-                            <input type="hidden" name="nota" value="<?php echo $fila['3']; ?>">
-                            <td><button type="submit" >Editar</button></th>
-                            </form>	
+                                <form action="editar_nota.php" method="POST">
+                                <input type="hidden" name="nota" value="<?php echo $fila['3']; ?>">
+                                <td id="peque"><button class="edicion" type="submit" ><img href="#" id="imgs" src="imagenes/editar.png"></button></td>
+                                </form>	
 
-                            <form action="del_nota.php" method="POST">
-                            <input type="hidden" name="nota" value="<?php echo $fila['3']; ?>">
-                            <td><button type="submit" >Borrar</button></th>
-                            </form>	
+                                <form action="del_nota.php" method="POST">
+                                <input type="hidden" name="nota" value="<?php echo $fila['3']; ?>">
+                                <td id="peque"><button class="edicion" type="submit" ><img href="#" id="imgs" src="imagenes/trash.png"></button></td>
+                                </form>	
 
-                            <form action="sesion_cal.php" method="POST">
-                            <input type="hidden" name="nota" value="<?php echo $fila['3']; ?>">
-                            <td><button type="submit" >Registrar</button></th>
-                            </form>	
-					        	
-                		</tr>
-                		
-                		<?php
-                		}
-                		?>
-                </div>
+                                <form action="sesion_cal.php" method="POST">
+                                <input type="hidden" name="nota" value="<?php echo $fila['3']; ?>">
+                                <td id="peque"><button class="edicion" type="submit" ><img href="#" id="imgs" src="imagenes/registrar.png"></button></td>
+                                </form>	
+                                    
+                    </tr>
+                            
+                            <?php
+                            }
+                            ?>
+
+                </table>
+
+            </div>
+
+           
+
+               
 
             </th>
 
@@ -170,9 +184,9 @@ $_SESSION['periodo']=$periodo;
 
     <div class="caja_hijo_uno"><a href='cursos.php'><button href="#" type="submit" class="boton_uno" >Salir</button></a></div>
 
-    <div class="caja_hijo_dos"><a href='Estudiantes_Inscritos.php'><button href="#" type="submit" class="boton_uno" >Estudiantes inscritos</button></a></div>
+<div class="caja_hijo_dos"><a href='Estudiantes_Inscritos.php'><button href="#" type="submit" class="boton_uno" >Estudiantes inscritos</button></a></div>
 
-    <div class="caja_hijo_dos"><a href='Reporte_Notas.php'><button href="#" type="submit" class="boton_uno" >Reporte de notas</button></a></div>
+    <div class="caja_hijo_tres"><a href='Reporte_Notas.php'><button href="#" type="submit" class="boton_uno" >Reporte de notas</button></a></div>
 
 
     </div> 
