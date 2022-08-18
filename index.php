@@ -3,8 +3,7 @@
     
  <script src="Js/Main.js"></script>  
     
-</body>
-</html>
+
 
 <!DOCTYPE html>
 <html lang="en">
