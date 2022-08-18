@@ -134,24 +134,29 @@ $_SESSION['periodo']=$periodo;
 
                     <tr>
 
+                               
+
                                 <?php
                                 $sql = "select cod_est from estudiantes  where cod_est in (select cod_est from inscripciones where cod_cur in(select cod_cur from cursos where nomb_cur='$cur') and year='$year' and periodo='$periodo')";
                                 $obj = pg_query($sql);
-                                $i=0;
                                 while ($fila = pg_fetch_array($obj)){
-                                ?>   
 
-                                <td scope="col"><?=$fila['0']?></td>
-                                	        			
+                                echo "<td scope=col> $fila[0]</td>";
+                                $estudiante = $fila[0];
 
-                 
-
-	
-
-                		</tr>
+                                $sql1 = "select c.valor, n.porcentaje from calificaciones c, notas n where n.nota=c.nota and c.cod_cur in (select cod_cur from cursos where nomb_cur='$cur') and c.year='$year' and c.periodo='$periodo' and cod_est='$estudiante' order by n.posicion";
+                                $obj1 = pg_query($sql1);
+                                $def=0;
+                                    while ($fila1 = pg_fetch_array($obj1)){
+                                        echo "<td scope=col> $fila1[0]</td>";
+                                        $def=$def+($fila1[0]*$fila1[1]/100);
+                                    }
+                                echo "<td scope=col> $def</td>";  
+                                
+                	            echo "</tr>";
                 		
-                		<?php
-                		}
+                		        
+                		        }
                 		?>
                     </table>
                 		
