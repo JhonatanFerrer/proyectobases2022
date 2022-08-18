@@ -1,7 +1,7 @@
 
 
     
-    
+ <script src="Js/Main.js"></script>  
     
 </body>
 </html>
@@ -15,6 +15,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
     <link rel="shortcut icon" href="imagenes/logofox.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Nodos/sweetalert/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="Js/Main.js">
 </head>
 <body>
 
@@ -77,3 +79,6 @@
 
 </body>
 </html>
+
+<script src="./Nodos/sweetalert/dist/sweetalert2.all.min.js"></script>
+
