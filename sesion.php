@@ -1,3 +1,5 @@
+<script src="Js/Main.js"></script>
+
 <?php
 require 'conexion.php';
 /*$conexion = pg_connect("host=localhost dbname=proyecto user=postgres password=postgres");*/
@@ -12,6 +14,7 @@ if($cantidad>0){
 	header("location: cursos.php");
 }
 else{
-	header("location: indexerror.php");
+	include("index.php");
+	echo '<script>incorrecto()</script>';
 }
 ?>
