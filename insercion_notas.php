@@ -17,20 +17,100 @@ $_SESSION['periodo']=$periodo;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/Insercion_notas.css">
 </head>
 <body>
+
+	<header>
+        <div class="contenedor">
+            <nav class="header">
+                
+                    <h1>REGISTRO DE NOTAS</h1><br>
+                    <h2 id="demo"></h2>
+                            <script>
+
+                            var fecha = new Date();
+                            var month = fecha.getUTCMonth() + 1;
+                            var day = fecha.getUTCDate() -1;
+                            var year = fecha.getUTCFullYear();
+                            document.getElementById("demo").innerHTML = day+"/"+month+"/"+year;
+
+                            </script>
+                 
+                
+            </nav>
+        </div>
+    </header>
+
+	<div class="title">
+        <nav class="subtitle">
+        <?php
+            echo "<h1>CURSO: $cur</h1>"
+            ?>
+        </nav>
+    </div>
+
+
 	<center>
-	<h1 class="miclase1"><i class="fad fa-user"></i>Inserscion de nota</h1>
-	<form action="inser_nota.php" method="POST">
-		<input type="text" name="desc" placeholder="Descripcion de la nota">
-		<br><br>
+	<table class="insertar_notas">
+
+	<tr>
+
+	<th id="peque">
+		<h1 class="title_Table"><i class="fad fa-user"></i>INGRESE LA NOTA</h1>
+	</th>
+
+	</tr>
+
+	<tr>
+
+	<td> 
+
+
+	<div class="bloque_padre">
+
+	<div class="bloque_hijo_uno">
+
+		<form action="inser_nota.php" method="POST">
+		<input  style="height:40px" type="text" name="desc" placeholder="Descripcion de la nota">
+
+	</div>
+
+	<div class="bloque_hijo_dos">
+
 		<input type="number" name="porc" placeholder="Porcentaje de la nota">
-		<br><br>
-        <input type="number" name="posicion" placeholder="Posicion de la nota">
-		<br><br>
-		<button type="submit" >Ingresar</button>
-	</form>
+
+	</div>
+
+	<div class="bloque_hijo_tres">
+
+		<input type="number" name="posicion" placeholder="Posicion de la nota">
+
+	</div>
+
+	<div class="bloque_hijo_boton">
+
+	<button id="xd" type="submit" >INGRESAR</button>
+		</form>
+
+	</div>
+
+		
+		
+			
+			
+			
+			
+			
+
+		</td>
+
+		</tr>
+	
+	</div>
+
+	</table>
+
 	</center>
 
 </body>
