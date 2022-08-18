@@ -22,19 +22,7 @@ $total = $sum+$porcentaje;
 echo "<h1>$total</h1>";
 echo "<h1>$descripcion</h1>";
 
-if($descripcion="Descripcion de la nota"){
-	$_SESSION['nombre_usuario']=$usuario;
-	header("location: Adiccion_Actuaizacionerror.php");	
-}
-else if($porcentaje="Porcentaje de la nota"){
-	$_SESSION['nombre_usuario']=$usuario;
-	header("location: Adiccion_Actuaizacionerror.php");
-}
-else if($posicion="Posicion de la nota"){
-	$_SESSION['nombre_usuario']=$usuario;
-	header("location: Adiccion_Actuaizacionerror.php");
-}
-else if($cantidad>0){
+if($cantidad>0){
 	$_SESSION['nombre_usuario']=$usuario;
 	header("location: Adiccion_Actuaizacionerror.php");
 }
