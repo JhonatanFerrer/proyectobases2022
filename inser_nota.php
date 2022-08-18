@@ -34,7 +34,10 @@ else if($total>100){
 	$_SESSION['nombre_usuario']=$usuario;
 	header("location: Adiccion_Actuaizacionerror.php");
 }
-
+else if($porcentaje<0){
+       $_SESSION['nombre_usuario']=$usuario;
+	header("location: Adiccion_Actuaizacionerror.php"); 
+}
 else{
 $result = pg_query("select cod_cur from cursos where nomb_cur='$cur'");
 $row = pg_fetch_array($result);
