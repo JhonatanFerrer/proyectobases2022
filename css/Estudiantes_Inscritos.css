@@ -284,6 +284,14 @@ img{
     background-color:transparent;
 }
 
+.ediciontwo{
+    width:30%;
+    height:auto;
+    border:none;
+    background-color:transparent;
+}
+
+
 .edicion:hover{
     background-color:#b4e4cc;
 }
