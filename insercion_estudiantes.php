@@ -76,7 +76,7 @@ $_SESSION['periodo']=$periodo;
 
 
                 <div id="imagen">
-			<a href='Estudiantes_Inscritos.php'> <button><img src="imagenes/flechaback.png"></im></button></a>                    
+			<a href='Estudiantes_Inscritos.php'> <button id="two"><img src="imagenes/flechaback.png"></im></button></a>                    
                 </div>
 
                 <div id="text_imagen"><h1>Estudiante</h1></div> 
@@ -123,7 +123,7 @@ $_SESSION['periodo']=$periodo;
 		        			<td scope="col"><?=$fila[0]?></td>
 						    <input type="hidden" name="cod" value="<?=$fila['0']?>">
 		        			<td name="nomb" scope="col"><?=$fila[1]?></td>
-		        			<td><button class="edicion" type="submit" >Insertar</button></th>
+		        			<td id="peque"><button class="edicion" type="submit" ><img href="#" id="imgs" src="imagenes/insertar.png"></button></td>
 
 					        </form>		
 
