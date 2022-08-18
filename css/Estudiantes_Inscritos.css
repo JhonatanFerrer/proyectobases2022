@@ -280,8 +280,12 @@ img{
 .edicion{
     width:30%;
     height:auto;
-    border:none;
-    background: transparent;
+    border-color: #30e598;
+    background-color:transparent;
+}
+
+.edicion:hover{
+    background-color:#b4e4cc;
 }
 
 #peque{
