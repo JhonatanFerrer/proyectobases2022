@@ -15,37 +15,19 @@ if ($per="Periodo I"){
 else{
 	$periodo="2";
 }
-if($cur="-- Seleccione una materia --"){
-	$_SESSION['cur']=$cur;
-	$_SESSION['year']=$year;
-	$_SESSION['cur']=$cur;
-	$_SESSION['periodo']=$periodo;
-	$_SESSION['nombre_usuario']=$usuario;
-	header("location: cursos.php");
-}
-else if($year="-- Seleccione un año --"){
-	$_SESSION['cur']=$cur;
-	$_SESSION['year']=$year;
-	$_SESSION['cur']=$cur;
-	$_SESSION['periodo']=$periodo;
-	$_SESSION['nombre_usuario']=$usuario;
-	header("location: cursos.php");
-}
-else if($per="-- Seleccione un periodo --"){
-	$_SESSION['cur']=$cur;
-	$_SESSION['year']=$year;
-	$_SESSION['cur']=$cur;
-	$_SESSION['periodo']=$periodo;
-	$_SESSION['nombre_usuario']=$usuario;
-	header("location: cursos.php");
-}
-else{
+if($cur!="-- Seleccione una materia --" && $year!="-- Seleccione un año --" && $per!="-- Seleccione un periodo --"){
 	$_SESSION['cur']=$cur;
 	$_SESSION['year']=$year;
 	$_SESSION['cur']=$cur;
 	$_SESSION['periodo']=$periodo;
 	$_SESSION['nombre_usuario']=$usuario;
 	header("location: Estudiantes_Inscritos.php");
+}
+else{
+	
+
+	$_SESSION['nombre_usuario']=$usuario;
+	header("location: cursos.php");
 }
 
 ?>
