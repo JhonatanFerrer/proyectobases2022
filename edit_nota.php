@@ -33,7 +33,10 @@ else if($total>100){
 	header("location: Adiccion_Actuaizacionerror.php");
 }
 
-
+else if($porcentaje<0){
+       $_SESSION['nombre_usuario']=$usuario;
+	header("location: Adiccion_Actuaizacionerror.php"); 
+}
 else{
 
 	$sql = "update notas set porcentaje='$porcentaje' where nota='$nota';";	
