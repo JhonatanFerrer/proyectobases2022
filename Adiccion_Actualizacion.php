@@ -184,9 +184,9 @@ $_SESSION['periodo']=$periodo;
 
     <div class="caja_hijo_uno"><a href='cursos.php'><button href="#" type="submit" class="boton_uno" >Salir</button></a></div>
 
-<div class="caja_hijo_dos"><a href='Estudiantes_Inscritos.php'><button href="#" type="submit" class="boton_uno" >Estudiantes inscritos</button></a></div>
+<div class="caja_hijo_tres"><a href='Estudiantes_Inscritos.php'><button href="#" type="submit" class="boton_uno" >Estudiantes inscritos</button></a></div>
 
-    <div class="caja_hijo_tres"><a href='Reporte_Notas.php'><button href="#" type="submit" class="boton_uno" >Reporte de notas</button></a></div>
+    <div class="caja_hijo_dos"><a href='Reporte_Notas.php'><button href="#" type="submit" class="boton_uno" >Reporte de notas</button></a></div>
 
 
     </div> 
