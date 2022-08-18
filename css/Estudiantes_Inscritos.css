@@ -81,6 +81,17 @@ div
 
 }
 
+.table_two{
+
+    width:60%;
+    height:500px;
+    margin-left: auto;
+    margin-right: auto;
+   border-collapse: collapse;
+    margin-top: 5%;
+
+}
+
 .registro{
 
  
@@ -232,6 +243,7 @@ img{
     width:50%;
     position: relative;
 
+
 }
 
 .caja_hijo_uno{
@@ -249,6 +261,18 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+   
+  
+    
+}
+
+.caja_hijo_cuatro{
+    position: absolute;
+    left:45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   
     
 }
@@ -263,4 +287,10 @@ img{
 #peque{
     width:20%;
 }
+
+#cal_no{
+    width:20%;
+    text-align: center;
+}
+
 
