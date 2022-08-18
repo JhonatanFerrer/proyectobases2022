@@ -54,6 +54,17 @@ $_SESSION['periodo']=$periodo;
 	<center>
 	<table class="insertar_notas">
 
+	<tr><th id="pequeñito">
+
+	<div class="salir">
+
+		<a href='Adiccion_Actualizacion.php'> <button id="two"><img style="width:100%" style="height:100%" src="imagenes/salir.png"></im></button></a> 
+
+	</div>
+
+
+	</th></tr>
+
 	<tr>
 
 	<th id="peque">
