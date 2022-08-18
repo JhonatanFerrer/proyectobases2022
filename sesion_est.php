@@ -5,6 +5,7 @@ session_start();
 $cur=$_POST['curso'];
 $year=$_POST['anio'];
 $per=$_POST['periodo'];
+$usuario=$_SESSION['nombre_usuario'];
 	$_SESSION['cur']=$cur;
 	$_SESSION['year']=$year;
 	$_SESSION['periodo']=$periodo;
