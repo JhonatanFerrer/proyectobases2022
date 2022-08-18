@@ -6,7 +6,6 @@ $usuario=$_SESSION['nombre_usuario'];
 $result = pg_query("select nomb_doc from docentes where cod_doc='$usuario'");
 $row = pg_fetch_array($result);
 $nomb_usuario = $row[0];
-echo "<h1>Bienvenido $nomb_usuario</h1>";
 ?>
 
 <!DOCTYPE html>
@@ -17,11 +16,15 @@ echo "<h1>Bienvenido $nomb_usuario</h1>";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seleccion de curso, año y periodo</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
     <header>
         <div class="contenedor">
+
+            <nav class="bienvenida"><?php echo "<h1>Bienvenido $nomb_usuario</h1>"; ?></nav>
+
             <nav class="header">
                 
                     <h1>REGISTRO DE NOTAS</h1><br>
@@ -135,3 +138,9 @@ echo "<h1>Bienvenido $nomb_usuario</h1>";
         </tr>
 
     </table>
+
+    <div class="cerrar">
+
+       <a href="#"><img id="cerrarimg" src="imagenes/cerrar.png"></a>
+
+    </div>
