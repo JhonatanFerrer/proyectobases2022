@@ -12,7 +12,7 @@ body
 div 
 {
 
-    width:100px;
+    width:10%;
     height: 100px;
     color:#ffF;
     font-size: 15px;
@@ -99,6 +99,7 @@ div
 
 #contenido_tabla{
 
+    margin-top: 3%;
     color:black;
     width:100%;
     height:100%;
@@ -157,6 +158,7 @@ img{
 #Notita{
 
     width: 70%;
+    height:20%;
     background-color: #e0efde;
     margin-left: auto;
     margin-right: auto;
@@ -165,6 +167,107 @@ img{
     font-size: 15px;
     line-height: 30px;
     text-align:justify;
+    margin-top: 5%;
    
 }
 
+.registro{
+
+ 
+    margin-left:auto;
+    margin-right:auto;
+   
+    border-collapse: collapse;
+    width:100%;
+    height:100%;
+    text-align: center;
+    
+}
+
+.registro tr td{
+    border:1px solid black;
+}
+
+#registro_uno{
+
+    height:15%;
+    background-color:#4068e2;
+}
+
+.edicion{
+    width:30%;
+    height:auto;
+    border:none;
+    background: transparent;
+}
+
+#peque{
+    width:15%;
+
+}
+
+.caja_padre{
+
+    
+    margin-top: 2%;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%;
+    position: relative;
+ 
+}
+
+.caja_hijo_uno{
+    position: absolute;
+    left:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+.caja_hijo_dos{
+    position: absolute;
+    left:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.caja_hijo_tres{
+    position: absolute;
+    left:45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+.boton_uno{
+    border: 2px solid #4169e2;
+    padding: 20px 30px;
+    color:black;
+    width:200px;
+    font-weight: 700;
+    font-size:15px;
+    text-decoration: none;
+    background-color: transparent;
+    transition: color 0.5s;
+    border-radius:15px ;
+    margin-right: auto;
+    margin-left: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+ 
+}
+
+.boton_uno:hover{
+
+    background-color: #4169e2;
+    color:white;
+    transition: 0.5s;
+}
