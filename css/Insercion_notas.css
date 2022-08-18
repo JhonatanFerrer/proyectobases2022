@@ -1,0 +1,173 @@
+*{
+
+    margin:0px;
+    padding: 0px;
+}
+
+body 
+{
+    background-color: #fbfaff;
+}
+
+div 
+
+{
+
+    width:100px;
+    height: 100px;
+    color:#ffF;
+    font-size: 15px;
+}
+
+
+.header
+{
+    margin:5px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    width:auto;
+    position: absolute;
+    left:83%;
+    top:15%;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor 
+{
+
+    width:100%;
+    height:100px;
+    background-color:#4169e2;
+    position: relative;
+}
+
+.title
+{
+    background-color: #add9e6;
+    width:100%;
+    height: 50px;
+    border-top:1px solid #93d8e5;
+    border-bottom:1px solid #93d8e5;
+
+}
+
+
+.subtitle{
+
+    margin:5px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    width:auto;
+    position: absolute;
+    left:84%;
+    align-items: center;
+    text-align: center;
+}
+
+.insertar_notas{
+
+    width:18%;
+    height:500px;
+    margin-left: auto;
+    margin-right: auto;
+   border-collapse: collapse;
+    margin-top: 5%;
+    background-color: #4169e2;
+    border-radius: 10px;
+
+}
+
+
+.insertar_notas, tr, th{
+  
+    border-color:black;
+}
+
+.insertar_notas, tr, td{
+  
+    border-color:black;
+}
+
+
+.title_Table{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bloque_padre{
+
+    width:100%;
+    height:100%;
+    position: relative; 
+}
+
+.bloque_hijo_uno{
+
+    width:60%;
+    height:10%;
+
+    left:20%;
+    position: absolute;
+    top:10%;
+}
+
+.bloque_hijo_dos{
+
+    width:60%;
+    height:10%;
+
+    left:20%;
+    position: absolute;
+    top:25%;
+}
+
+.bloque_hijo_tres{
+
+    width:60%;
+    height:10%;
+
+    left:20%;
+    position: absolute;
+    top:40%;
+}
+
+#peque{
+
+    height:25%;
+}
+
+.bloque_hijo_boton{
+
+    width:60%;
+    height:10%;
+
+    left:20%;
+    position: absolute;
+    top:70%;
+}
+
+input{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    border: none;
+    padding-left:10px;
+
+}
+
+#xd{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    border:none;
+    padding-left:10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#xd:hover{
+    border-color: white;
+    border:1px solid black;
+    
+}
