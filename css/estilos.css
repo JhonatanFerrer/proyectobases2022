@@ -1,4 +1,5 @@
 *{
+
     margin:0px;
     padding: 0px;
 }
@@ -238,4 +239,33 @@ footer{
     height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+}
+
+.bienvenida{
+    position: absolute;
+    width:auto;
+    height:auto;
+    margin-top:2%;
+    margin-left:2%;
+    text-align: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px;
+    line-height: 20px;
+   
+}
+
+.cerrar{
+    width: 3%;
+    height:3%;
+    position:relative;
+    border:none;
+    margin-top:3%;
+    margin-left:2% ;
+   
+}
+
+#cerrarimg{
+    width:100%;
+    height:100% ;
 }
